@@ -1,0 +1,33 @@
+package user login;
+import java.util.Scanner;
+public class User login {
+    public static void main(String[] args) {
+        Scanner scanner;
+        scanner = new Scanner(System.in);
+
+       
+        String correct Username = "Clive";
+        String correct Password = "ethic123"; 
+
+        
+        for (int attempt = 1; attempt <= 3; attempt++) {
+            
+            System.out.print("Enter username: ");
+            String entered Username = scanner.next Line();
+
+            System.out.print("Enter password: ");
+            String entered Password = scanner.next Line();
+
+            
+            if (correct Username.equals(entered Username) && correct Password.equals(entered Password)) {
+                System.out.print ln("Login successful!");
+                break; 
+            } else {
+                System.out.print ln("Login failed. Please try again. Attempts left: " + (3 - attempt));
+            }
+        }
+
+       
+        scanner.close();
+    }
+}
